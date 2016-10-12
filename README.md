@@ -5,23 +5,18 @@ $  cordova plugin add https://github.com/JsonJieLi/cordova-plugin-esaylinkPlugin
 
 
 # javascript
-// exports.pay = function(arg0, success, error) {
-    // exec(success, error, "EsayLinkPlugin", "pay", [arg0]);
-// };
+     // exports.pay = function(arg0, success, error) {
+     // exec(success, error, "EsayLinkPlugin", "pay", [arg0]);
+     // };
 
-module.exports = {
+     module.exports = {
 	pay: function (paymentInfo, successCallback, errorCallback) {
 		 cordova.exec(successCallback, errorCallback, "EsayLinkPlugin", "pay", [paymentInfo]);
 	}
-}
+     }
 
 # with Angular (#ionic)
-$scope.payOrder = function(){
-		if($scope.isMobile){
-			window.EsayLinkPlugin.pay({
-				orderId: $stateParams.id
-			}, function(successResults){
-				var jsonO = eval(successResults);
+ 		var jsonO = eval(successResults);
 				$location.path("/member/selfOrderDetail/"+jsonO.MerchOrderId);
 				$rootScope.$apply();
 			}, function(errorResults){
