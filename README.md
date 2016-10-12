@@ -1,7 +1,7 @@
 # cordova-plugin-esaylinkPlugin
 Cordova易联支付插件
 # install form github
-$  cordova plugin add https://github.com/JsonJieLi/cordova-plugin-esaylinkPlugin.git--variable PAY_URL={ PAY_URL } --variable NOTIFY_URL={  NOTIFY_URL  } --variable ENVIRONMENT={ 00/01 }
+$  cordova plugin add https://github.com/JsonJieLi/cordova-plugin-esaylinkPlugin.git --variable PAY_URL={ PAY_URL } --variable NOTIFY_URL={  NOTIFY_URL  } --variable ENVIRONMENT={ 00/01 }
 
 # 参数说明：
 PAY_URL://商户服务器下单地址，此地址为商户平台测试环境下单地址，商户接入需改为商户自己的服务器下单地址
